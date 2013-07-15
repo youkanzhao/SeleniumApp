@@ -51,6 +51,7 @@ public class SeleniumHelper {
 		System.out.println("Hello World");
 		WebDriver driver = createDriver("firefox");
 		driver.get("http://www.baidu.com");
+		driver.quit();
 	}
 
 }
