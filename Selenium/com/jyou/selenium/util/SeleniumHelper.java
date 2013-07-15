@@ -2,7 +2,7 @@ package com.jyou.selenium.util;
 
 import java.io.File;
 import java.util.Properties;
-
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -48,10 +48,17 @@ public class SeleniumHelper {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hello World");
-		WebDriver driver = createDriver("firefox");
-		driver.get("http://www.baidu.com");
-		driver.quit();
+		Logger logger = Logger.getLogger(SeleniumHelper.class);
+//		logger.info("¿ªÊ¼");
+//		System.out.println("Hello World");
+//		WebDriver driver = createDriver("ie");
+//		driver.get("http://www.baidu.com");
+//		driver.quit();
+//		logger.info("½áÊø");
+		logger.info("info");
+		logger.debug("debug");
+		logger.warn("warn");
+		logger.error("error");
 	}
 
 }
