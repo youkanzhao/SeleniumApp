@@ -26,7 +26,14 @@ public class SeleniumHelper {
 			}
 			else {
 				Properties props = System.getProperties();
-				filePath.append(browse + "_" + props.getProperty("os.arch"));
+				String arch = props.getProperty("os.arch");
+				filePath.append(browse + "_");
+				if(arch.equals("x86")){
+					filePath.append(arch);
+				}
+				else {
+					filePath.append("amd64");
+				}
 				filePath.append(File.separator);
 				filePath.append("IEDriverServer.exe");
 				System.setProperty("webdriver.ie.driver", filePath.toString());
