@@ -49,12 +49,12 @@ public class SeleniumHelper {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Logger logger = Logger.getLogger(SeleniumHelper.class);
-//		logger.info("开始");
-//		System.out.println("Hello World");
-//		WebDriver driver = createDriver("ie");
-//		driver.get("http://www.baidu.com");
-//		driver.quit();
-//		logger.info("结束");
+		logger.info("开始");
+		System.out.println("Hello World");
+		WebDriver driver = createDriver("ie");
+		driver.get("http://www.baidu.com");
+		driver.quit();
+		logger.info("结束");
 		logger.info("info");
 		logger.debug("debug");
 		logger.warn("warn");
